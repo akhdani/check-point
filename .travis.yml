@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '0.12'
+install:
+- npm install
+branches:
+  only:
+  - master
+deploy:
+  provider: heroku
+  api_key:
+    secure: X97g2NZ1ber04zMx63kSPsmxKiKESrbKLhgb4KSWpqeMLyNYicp90tAUHADY2bc9cHcPgGhakkLkbzh0ydZLfit+rR0LufTi040ds98mmH5ys3gThbq9hrVXd0gdulgE0S8IBBQPYGzzZB0SUSkit8lIkGEtpArSpHp2vOJLZHrLJQgvVvgX53PB2GSl6V+9iABJpvoyD3ampRNX9a6A0d9W/Jx5Vy4/IdO6j63YCALFYzB44ccLGtauKsnrFMPxlLCTTUjr/28eoU4fHvQLMKbwoCNCBZ5dqujMb3TDmEFffkSoTerNtYgu0jxXhAREr9bpNSYHp0hNLfraXW1cw5ScXyR06+t8Xs3yZnArHliMQt2SrQp0klloQnRQ+yJ6P79QBfjLW9mxUw3zdRoezUU2+OSZ2Omc54TN0sr48jvyj+W3v4eFRPVhIkwOUi8ESV01J7xK+lvD84UMmbPkPSdEA1vsuQfcuCKYykGB+7R9u77x4oHzTjOfUrYTTIYl2zwRpiQKFdg9WI8Mshj6laJkGupJeFLKTxi/4trCreXXH3j6JMDfa+7kVgyx6ZN+S5LUdxTR3lz0Eh97OqwoMKcPqyMMrDe8MCP6+eFuvgBi1C50nMorcWPDqMYnELpIqVYCVG8HdMKj2UTxEF1WbRDSn52FNnKfhbTM1QpPXHs=
+  app: ars-check-point
+  on:
+    repo: akhdani/check-point
+notifications:
+  email: false
